@@ -5,20 +5,20 @@
 class McpSim < Formula
   desc ""
   homepage ""
-  version "0.1.1"
+  version "0.2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/espetro/mcp-sim/releases/download/v0.1.1/mcp-sim_0.1.1_darwin_amd64.zip"
-      sha256 "c6ed0fccb83958596f8a6efb1a3f0f3a481e580633485e5b8822466c348ce62b"
+      url "https://github.com/espetro/mcp-sim/releases/download/v0.2.0/mcp-sim_0.2.0_darwin_amd64.zip"
+      sha256 "6f97b0ab3337c0be1d1f97f8aa8a06ecc8e4a519c9113d771fe2b08f7cd937a9"
 
       define_method(:install) do
         bin.install "mcp-sim"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/espetro/mcp-sim/releases/download/v0.1.1/mcp-sim_0.1.1_darwin_arm64.zip"
-      sha256 "2c5f111de5e5e070833f708f4228adfac4b858f324958f660519a25e08b260e0"
+      url "https://github.com/espetro/mcp-sim/releases/download/v0.2.0/mcp-sim_0.2.0_darwin_arm64.zip"
+      sha256 "cf755fa2196f520bcef46a0e5ebc8fe2095b50e497a49479cb541adef1412811"
 
       define_method(:install) do
         bin.install "mcp-sim"
@@ -28,15 +28,15 @@ class McpSim < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/espetro/mcp-sim/releases/download/v0.1.1/mcp-sim_0.1.1_linux_amd64.tar.gz"
-      sha256 "d810ecba9c6cf024518025894234571b190e630ea64168c5b9bb49460096c437"
+      url "https://github.com/espetro/mcp-sim/releases/download/v0.2.0/mcp-sim_0.2.0_linux_amd64.tar.gz"
+      sha256 "bd3787ca05c03f4fc0d99921e94660d7ae9b297c807806750688fe66ea056286"
       define_method(:install) do
         bin.install "mcp-sim"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/espetro/mcp-sim/releases/download/v0.1.1/mcp-sim_0.1.1_linux_arm64.tar.gz"
-      sha256 "006b8a5e3afb06203061162e181bf2b0c55e80b9cf6d69547bbef06b7cc3c29b"
+      url "https://github.com/espetro/mcp-sim/releases/download/v0.2.0/mcp-sim_0.2.0_linux_arm64.tar.gz"
+      sha256 "888521d99fc879b6c2597bd9be9ebeead2c1bb3e06a3f647895c7c0a0e6c2135"
       define_method(:install) do
         bin.install "mcp-sim"
       end
